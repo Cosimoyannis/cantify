@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- This is the main template for the site, with index.jsx building the content and behavior -->
+
+    <title>Hello React!</title>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+     <link rel="apple-touch-icon" href="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/cantify_512x512_white.png?v=1656106752533" />
+    
+    <meta name="theme-color" content="white" />
+
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/blog/"
+    />
+
+    <link href="src/styles/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="src/styles/styles" rel="stylesheet" />
+  </head>
+
+  <script type="text/javascript">
+    (function () {
+      console.log("Trying to register service worker");
+
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("serviceWorker.js")
+          .then(function (reg) {
+            console.log("Registration succeeded", reg);
+          })
+          .catch(function (error) {
+            console.log("Registration failed with", error);
+          });
+      }
+    })();
+  </script>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="module" src="/src/index.jsx"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+            ></script>
+    
+  </body>
+  
+</html>
