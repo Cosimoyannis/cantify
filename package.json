@@ -1,35 +1,43 @@
 {
-  "name": "glitch-hello-react",
-  "version": "0.0.5",
-  "description": "A simple React single page app, built with Vite and React.",
+  "name": "vue-starter-project",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-spring": "^9.4.5",
-    "wouter": "^2.7.4",
-    "react-helmet-async": "^1.3.0",
-    "@vitejs/plugin-react": "^1.3.2",
-    "react-native": "^0.69.1"
+    "core-js": "^3.8.3",
+    "vue": "^3.2.13"
   },
   "devDependencies": {
-    "vite": "^2.4.4"
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
   },
   "browserslist": [
-    ">0.2%",
-    "not dead"
-  ],
-  "engines": {
-    "node": "12.x"
-  },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/glitch-hello-react"
-  },
-  "glitch": {
-    "projectType": "generated_static"
-  }
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
 }
